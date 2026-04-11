@@ -5,6 +5,8 @@ public class CheckpointController : MonoBehaviour
     public CheckpointController next;
     public MeshRenderer left;
     public MeshRenderer right;
+    public bool lapStart;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

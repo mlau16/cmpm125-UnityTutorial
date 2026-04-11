@@ -13,6 +13,7 @@ public class VehicleController : MonoBehaviour
     float desired_acceleration;
     float side_acceleration;
     float starttime;
+    int lapCount = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,7 +34,9 @@ public class VehicleController : MonoBehaviour
             transform.Rotate(0, dx, 0);
         }
 
-        timelbl.text = string.Format("Current time: {0:F2} seconds", (Time.time - starttime));
+        float racetime = Time.time - starttime;
+        timelbl.text = "Lap: " + lapCount + "  Time: " + racetime.ToString("F2");
+    
     }
 
     void OnMove(InputValue action)
@@ -42,4 +45,21 @@ public class VehicleController : MonoBehaviour
         desired_acceleration = movement.y;
         side_acceleration = movement.x;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        CheckpointController checkpoint = other.GetComponent<CheckpointController>();
+
+        if (checkpoint != null && checkpoint == target)
+        {
+            if (checkpoint.lapStart)
+            {
+                lapCount++;
+                starttime = Time.time;
+            }
+
+            target = target.next;
+        }
+    }
+
 }

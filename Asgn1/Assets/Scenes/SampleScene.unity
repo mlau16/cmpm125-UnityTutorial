@@ -1051,6 +1051,7 @@ MonoBehaviour:
   next: {fileID: 1669364630}
   left: {fileID: 1243110278}
   right: {fileID: 132602598}
+  lapStart: 0
 --- !u!4 &221850852
 Transform:
   m_ObjectHideFlags: 0
@@ -1477,6 +1478,7 @@ MonoBehaviour:
   next: {fileID: 1354509746}
   left: {fileID: 208159625}
   right: {fileID: 156968650}
+  lapStart: 0
 --- !u!4 &512112714
 Transform:
   m_ObjectHideFlags: 0
@@ -2011,6 +2013,7 @@ MonoBehaviour:
   next: {fileID: 1902430186}
   left: {fileID: 1391160426}
   right: {fileID: 948831110}
+  lapStart: 0
 --- !u!65 &841999291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2787,6 +2790,7 @@ MonoBehaviour:
   next: {fileID: 2106271134}
   left: {fileID: 1040358809}
   right: {fileID: 911086742}
+  lapStart: 0
 --- !u!4 &1290493498
 Transform:
   m_ObjectHideFlags: 0
@@ -2915,6 +2919,7 @@ MonoBehaviour:
   next: {fileID: 841999290}
   left: {fileID: 81434}
   right: {fileID: 760805604}
+  lapStart: 0
 --- !u!4 &1354509747
 Transform:
   m_ObjectHideFlags: 0
@@ -3335,6 +3340,7 @@ MonoBehaviour:
   next: {fileID: 1290493497}
   left: {fileID: 197347198}
   right: {fileID: 46328688}
+  lapStart: 0
 --- !u!4 &1669364631
 Transform:
   m_ObjectHideFlags: 0
@@ -3736,6 +3742,7 @@ MonoBehaviour:
   next: {fileID: 221850851}
   left: {fileID: 1741008417}
   right: {fileID: 102966757}
+  lapStart: 1
 --- !u!1 &1962099867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,6 +3778,7 @@ MonoBehaviour:
   next: {fileID: 512112713}
   left: {fileID: 1443856237}
   right: {fileID: 2085333825}
+  lapStart: 0
 --- !u!4 &1962099869
 Transform:
   m_ObjectHideFlags: 0
@@ -4371,6 +4379,7 @@ MonoBehaviour:
   next: {fileID: 1962099868}
   left: {fileID: 988281401}
   right: {fileID: 730759338}
+  lapStart: 0
 --- !u!4 &2106271135
 Transform:
   m_ObjectHideFlags: 0
